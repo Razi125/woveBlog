@@ -14,3 +14,45 @@ a {
 * {
   box-sizing: border-box;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Montserrat  */
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/static/Montserrat-Bold.ttf);
+}
+
+/* / Montserrat Medium / */
+@font-face {
+  font-family: "Montserrat-medium";
+  src: url(../fonts/static/Montserrat-Regular.ttf);
+}
+
+/* / Montserrat light / */
+@font-face {
+  font-family: "Montserrat-light";
+  src: url(../fonts/static/Montserrat-Light.ttf);
+}
+
+/* / AvenirLTStd-Black */
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/AvenirLTStd-Book.otf);
+}
+
+.montserrat {
+  font-family: "Montserrat";
+}
+.montserrat-medium {
+  font-family: "Montserrat-medium";
+}
+.montserrat-light {
+  font-family: "Montserrat-light";
+}
+
+.avenir {
+  font-family: "Avenir";
+}
