@@ -11,7 +11,7 @@ const data = [
         url: '/images/pic2.svg',
         date: '. JAN 23, 2022',
         title: 'How to Load 100 Billion Rows of Data Ultrafast',
-        parah: 'It’s no secret that loading data into a database can be an arduous, time-consuming process.'
+        parah: 'Its no secret that loading data into a database can be an arduous, time-consuming process.'
     },
     {
         url: '/images/pic3.svg',
@@ -50,13 +50,13 @@ const dataMobile = [
         url: '/images/pic12.svg',
         date: '. FEB 23, 2022 ',
         title: 'Five Factors of Cloud Database Leaders',
-        parah: 'If you haven’t noticed, the cloud database market is on fire.You’ll definitely feel the heat when you check out the recently released Cloud Database Report 2022 & Top 20 Vendors'
+        parah: 'If you havent noticed, the cloud database market is on fire.Youll definitely feel the heat when you check out the recently released Cloud Database Report 2022 & Top 20 Vendors'
     },
     {
         url: '/images/pic13.svg',
         date: '. JAN 23, 2022 ',
         title: 'How to Load 100 Billion Rows of Data Ultrafast',
-        parah: 'It’s no secret that loading data into a database can be an arduous, time-consuming process.'
+        parah: 'Its no secret that loading data into a database can be an arduous, time-consuming process.'
     },
     {
         url: '/images/pic14.svg',
@@ -89,8 +89,8 @@ const Card = () => {
         <>
             <div className='mx-auto container xl:block hidden'>
                 <div className='grid grid-cols-3'>
-                    {data?.map((item) => (
-                        <div className='flex flex-col max-w-[408px]'>
+                    {data?.map((item , index) => (
+                        <div key={index} className='flex flex-col max-w-[408px]'>
                             <div>
                                 <img className='w-[408px] h-[267px] rounded-[8px] ' src={item.url} alt='' />
                             </div>
@@ -108,8 +108,8 @@ const Card = () => {
             {/** For Mobile and tablit Screen */}
             <div className='mx-auto container px-8 xl:hidden block -mt-[4rem]'>
                 {
-                    dataMobile?.map((item) => (
-                        <div className='flex flex-col md:flex-row justify-center items-center space-x-6'>
+                    dataMobile?.map((item , index) => (
+                        <div key={index} className='flex flex-col md:flex-row justify-center items-center space-x-6'>
                             <div>
                                 <img className='w-[439px] h-[267px]  rounded-[8px]' src={item.url} alt=''/>
                             </div>
